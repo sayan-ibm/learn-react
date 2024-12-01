@@ -6,7 +6,7 @@ const Product = () => {
         {
             id: 1,
             name: "Apple iphone 13 (Blue 128 GB)",
-            price: 69000,
+            price: 79000,
             discouont: 14,
             exchangeValue: 32000,
             image: "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg",
@@ -15,8 +15,8 @@ const Product = () => {
             ratingCount: 2000,
             reviewCount: 7000,
             productDescription: [
-                "128 GB ROMM",
-                '6.7" Screen Super Retina XDR Display',
+                "128 GB ROM",
+                '5.11" Screen Super Retina XDR Display',
                 "12MP + 12MP | 12MP Front Camera",
                 "A15 Bionic Chip",
                 "12MP + 8MP | 8MP Front Camera",
@@ -25,7 +25,7 @@ const Product = () => {
         {
             id: 2,
             name: "Apple iphone 13 (White 128 GB)",
-            price: 69000,
+            price: 96000,
             discouont: 14,
             exchangeValue: 32000,
             image: "https://m.media-amazon.com/images/I/71d7rfSl0wL._AC_UF1000,1000_QL80_.jpg",
@@ -34,18 +34,18 @@ const Product = () => {
             ratingCount: 2000,
             reviewCount: 7000,
             productDescription: [
-                "128 GB ROMM",
+                "256 GB ROM",
                 '6.7" Screen Super Retina XDR Display',
-                "12MP + 12MP | 12MP Front Camera",
-                "A15 Bionic Chip",
-                "12MP + 8MP | 8MP Front Camera",
+                "48MP + 12MP | 12MP Front Camera",
+                "A15 Bionic Chip, 6 Core Processor",
+                "1 year warranty for phone and box accesories",
             ],
         },
     ];
     return (
         <div className="products">
             {products.map((product) => (
-                <div className="product">
+                <div className="product" key={product.id}>
                     <div className="image-container">
                         <img src={product.image} alt="iphone" />
                         {product.bestseller ? (

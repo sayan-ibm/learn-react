@@ -1,13 +1,14 @@
-import { useState } from "react";
 import "./App.css";
-import Product from "./components/Product";
+import Counter from "./components/Counter/Counter";
+import Product from "./components/Dec1HW/Product";
+import Card from "./components/Dec2CW/Card"
+import SearchFilter from "./components/SearchFilter/SearchFilter"
 
 function App() {
-    const [count, setCount] = useState(0);
 
     return (
         <div>
-            <Product />
+            <SearchFilter/>
         </div>
     );
 }

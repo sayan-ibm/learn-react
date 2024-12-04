@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Counter.css'
+import Button from '../Buttons/Button';
+
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -21,8 +23,10 @@ const Counter = () => {
         <div className={`number ${count > 2 ? "bg" : ""}`} 
         style={count > 0 ? {color: 'green'} : count == 0 ? {color: 'black'}: {color: 'red'}}>{count}</div>
         <div className="buttons">
-            <button onClick={sub}>-</button>
-            <button onClick={add}>+</button>
+            {/* <button onClick={sub}>-</button>
+            <button onClick={add}>+</button> */}
+            <Button icon={"-"} handlingFunc={sub}/>
+            <Button icon={"+"} handlingFunc={add}/>
         </div>
     </div>
   )
